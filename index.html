@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>トップページ デザイン案｜ヒューマンライツ株式会社（デザイン確認用）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #1c2b4a; --gold: #b0915a; --line: #d8dfe8; --sub: #5d6676; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Noto Sans JP", sans-serif; color: #232a36; background: #eef3f8; line-height: 1.8; }
+  main { width: min(100% - 32px, 880px); margin: 0 auto; padding: 72px 0; }
+  h1 { margin: 0; font-size: clamp(22px, 4vw, 30px); color: var(--navy); letter-spacing: .06em; }
+  .lead { margin: 12px 0 40px; font-size: 14px; color: var(--sub); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  a { display: grid; grid-template-columns: 72px 1fr auto; align-items: center; gap: 20px; padding: 28px 28px; background: #fff; border-left: 3px solid var(--gold); text-decoration: none; color: inherit; transition: transform .3s; }
+  a:hover { transform: translateX(6px); }
+  .tag { font-size: 28px; font-weight: 700; color: var(--gold); }
+  .name { font-weight: 700; font-size: 18px; color: var(--navy); }
+  .desc { display: block; font-size: 13px; color: var(--sub); }
+  .arrow { color: var(--navy); }
+  .note { margin-top: 40px; font-size: 12px; color: var(--sub); }
+  @media (max-width: 599px) { a { grid-template-columns: 48px 1fr; padding: 22px 20px; } .arrow { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>トップページ デザイン案</h1>
+  <p class="lead">ヒューマンライツ株式会社 コーポレートサイトの方向性を決めるための見本です。構成・文章・写真は3案共通（仮原稿・AIによるイメージ写真）で、見た目と動きだけを変えています。</p>
+  <ul>
+    <li><a href="https://hrgroup.e-adeliae-2026.com/html/a/"><span class="tag">A</span><span><span class="name">A案　シンプル</span><span class="desc">装飾と動きを抑えた基本の案</span></span><span class="arrow">→</span></a></li>
+    <li><a href="b/"><span class="tag">B</span><span><span class="name">B案　余白と品格</span><span class="desc">信頼感を崩さない範囲で、明朝の見出しと控えめな動きを加えた案</span></span><span class="arrow">→</span></a></li>
+    <li><a href="c/"><span class="tag">C</span><span><span class="name">C案　人が主役</span><span class="desc">写真と大きな文字、読み込みや流れる帯などの演出で攻めた案</span></span><span class="arrow">→</span></a></li>
+  </ul>
+  <p class="note">※ 動きの確認は PC のブラウザがおすすめです（C案の背景固定は、スマホでは通常のスクロールになります）。</p>
+</main>
+</body>
+</html>
