@@ -1,11 +1,11 @@
 /* ③案 人が主役 --------------------------------------------------------- */
 :root {
-  --navy: #14213d;
-  --navy-deep: #0b1428;
-  --navy-mid: #1f3060;
-  --pale: #eef2f7;
-  --gold: #c5a265;
-  --gold-deep: #a9864b;
+  --navy: #13263a;
+  --navy-deep: #0a1725;
+  --navy-mid: #1c3550;
+  --pale: #f2f5f0;
+  --gold: #9fc238; /* アップルグリーン（差し色。C はボタン・帯などの塗りにも使う） */
+  --gold-deep: #5c7a12; /* 白地の上の文字用に濃くした緑 */
   --text: #1d2330;
   --sub: #5a6375;
   --line: #d6dde7;
@@ -102,7 +102,7 @@ h1, h2, h3, p { margin: 0; }
   pointer-events: none;
   user-select: none;
 }
-.bg-word-dark { color: rgba(20,33,61,.05); }
+.bg-word-dark { color: rgba(19,38,58,.05); }
 
 .more-link { margin-top: 48px; }
 .more-link a {
@@ -245,7 +245,7 @@ h1, h2, h3, p { margin: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(11,20,40,.88) 0%, rgba(11,20,40,.55) 45%, rgba(11,20,40,.1) 80%);
+  background: linear-gradient(100deg, rgba(10,23,37,.88) 0%, rgba(10,23,37,.55) 45%, rgba(10,23,37,.1) 80%);
 }
 .hero-inner {
   position: absolute;
@@ -318,7 +318,7 @@ h1, h2, h3, p { margin: 0; }
 @keyframes scroll-line { from { background-position: 0 100%; } to { background-position: 0 -100%; } }
 @media (max-width: 899px) {
   .hero { min-height: 560px; height: 92svh; }
-  .hero::after { background: linear-gradient(0deg, rgba(11,20,40,.92) 0%, rgba(11,20,40,.5) 55%, rgba(11,20,40,.15) 100%); }
+  .hero::after { background: linear-gradient(0deg, rgba(10,23,37,.92) 0%, rgba(10,23,37,.5) 55%, rgba(10,23,37,.15) 100%); }
   .hero-inner { left: 20px; right: 20px; bottom: 120px; }
   .hero-title { font-size: 11.4vw; }
   .hero-lead { margin-top: 20px; font-size: 14px; }
@@ -452,7 +452,7 @@ h1, h2, h3, p { margin: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(11,20,40,.92) 0%, rgba(11,20,40,.75) 45%, rgba(11,20,40,.15) 100%);
+  background: linear-gradient(90deg, rgba(10,23,37,.92) 0%, rgba(10,23,37,.75) 45%, rgba(10,23,37,.15) 100%);
 }
 .recruit-inner { position: relative; }
 .recruit-title {
@@ -498,7 +498,7 @@ h1, h2, h3, p { margin: 0; }
 @media (max-width: 899px) {
   .recruit { padding: calc(104px + var(--slant)) 0 calc(112px + var(--slant)); }
   .recruit-bg { background-attachment: scroll; }
-  .recruit-bg::after { background: linear-gradient(0deg, rgba(11,20,40,.95) 0%, rgba(11,20,40,.75) 60%, rgba(11,20,40,.45) 100%); }
+  .recruit-bg::after { background: linear-gradient(0deg, rgba(10,23,37,.95) 0%, rgba(10,23,37,.75) 60%, rgba(10,23,37,.45) 100%); }
   .recruit-text { font-size: 15px; }
   .button { width: 100%; min-width: 0; }
 }
@@ -539,7 +539,7 @@ h1, h2, h3, p { margin: 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(197,162,101,.35), transparent 50%);
+  background: linear-gradient(0deg, rgba(159,194,56,.35), transparent 50%);
   opacity: 0;
   transition: opacity .5s;
 }
@@ -723,3 +723,6 @@ h1, h2, h3, p { margin: 0; }
   .strength-photo.is-ready { clip-path: none; }
   .recruit-bg { background-attachment: scroll; }
 }
+
+/* 紺地の上の英字ラベルは明るい緑に */
+.philosophy .eyebrow { color: var(--gold); }

@@ -1,10 +1,11 @@
 /* ②案 余白と品格 ------------------------------------------------------- */
 :root {
-  --navy: #1c2b4a;
-  --navy-deep: #131f38;
-  --pale: #eef3f8;
-  --pale-2: #dfe8f2;
-  --gold: #b0915a;
+  --navy: #1a2e44;
+  --navy-deep: #112031;
+  --pale: #f3f5f2;
+  --pale-2: #e2e8dc;
+  --gold: #9fc238; /* アップルグリーン（差し色。面積は線・ラベル程度に） */
+  --green-text: #5c7a12; /* 白地の上の文字用に濃くした緑 */
   --text: #232a36;
   --sub: #5d6676;
   --line: #d8dfe8;
@@ -158,7 +159,7 @@ h1, h2, h3, p { margin: 0; }
   background: var(--navy);
   transition: background .3s;
 }
-.nav-contact a:hover { background: var(--gold); }
+.nav-contact a:hover { background: var(--gold); color: var(--navy-deep); }
 .menu-button { display: none; }
 
 @media (max-width: 899px) {
@@ -440,7 +441,7 @@ h1, h2, h3, p { margin: 0; }
 .button::after { content: "→"; font-family: var(--sans); transition: transform .3s var(--ease); }
 .button:hover::after { transform: translateX(4px); }
 .button-primary { background: var(--navy); color: var(--white); border: 1px solid var(--navy); }
-.button-primary:hover { background: var(--gold); border-color: var(--gold); }
+.button-primary:hover { background: var(--gold); border-color: var(--gold); color: var(--navy-deep); }
 .button-outline { border: 1px solid var(--navy); color: var(--navy); }
 .button-outline:hover { background: var(--navy); color: var(--white); }
 @media (max-width: 899px) {
@@ -681,3 +682,9 @@ h1, h2, h3, p { margin: 0; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   [data-fade] { opacity: 1; transform: none; }
 }
+
+/* アップルグリーン：白地・淡色地の上の文字は濃い緑に */
+.label-en, .hero-slogan, .strength-num, .staff-office { color: var(--green-text); }
+.news-list a:hover .news-title { color: var(--green-text); }
+.business-list a::after { color: var(--green-text); }
+.footer-nav a:hover, .policy-nav a:hover { color: var(--gold); }
