@@ -726,3 +726,8 @@ h1, h2, h3, p { margin: 0; }
 
 /* 紺地の上の英字ラベルは明るい緑に */
 .philosophy .eyebrow { color: var(--gold); }
+
+/* FV 写真：人物が画面右に寄るように */
+.hero-slides img:nth-child(1) { object-position: 78% 40%; }
+.hero-slides img:nth-child(2) { object-position: 62% 40%; }
+.hero-slides img:nth-child(3) { object-position: 72% 30%; }
